@@ -29,7 +29,6 @@ class App extends Component{
       estado.numero += 0.1;
       this.setState(estado);
       }, 100);
-
       estado.botao = 'PAUSAR';
     }
 
@@ -58,8 +57,8 @@ class App extends Component{
         <img src={cronometro} className='img'/>
         <a className='timer'>{this.state.numero.toFixed(1)}</a>
       <div className='areaBtn'>
-        <a className='botao' onClick={this.iniciarCronometro}>{this.state.botao} INICIAR</a>
-        <a className='botao' onClick={this.zerarCronometro}>{this.state.botao} ZERAR</a>
+        <a className='botao' onClick={this.iniciarCronometro}>{this.state.botao}</a>
+        <a className='botao' onClick={this.zerarCronometro}> ZERAR</a>
       </div>       
       </div>
   );
